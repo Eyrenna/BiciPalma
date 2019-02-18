@@ -1,6 +1,6 @@
 package appalma;
 
-//_import bicicleta.Bicicleta;
+import bicicleta.Bicicleta;
 import estacion.Estacion;
 //_import tarjetaUsuario.TarjetaUsuario;
 
@@ -30,22 +30,22 @@ public class BiciPalma {
 
         int[] bicicletas = {291, 292, 293, 294};
 
-		/* // generar anclaje random
+		/*// generar anclaje random
 		for (int i: bicicletas){
-			System.out.println( estacion.generarAnclaje());
-		}
-		*/
+			System.out.println(estacion.generarAnclaje());
+		}*/
 
-        //_for ( int id: bicicletas ){
-        //_    Bicicleta bicicleta = new Bicicleta(id);
-        //_    estacion.anclarBicicleta(bicicleta);
-        }
 
-        //_System.out.println("anclajesLibres tras generar "+ bicicletas.length + " bicis: " + estacion.anclajesLibres());
+        /*for ( int id: bicicletas ){
+            Bicicleta bicicleta = new Bicicleta(id);
+            estacion.anclarBicicleta(bicicleta);
+        }*/
+
+        System.out.println("anclajesLibres tras generar "+ bicicletas.length + " bicis: " + estacion.anclajesLibres());
 
         /* caso TEST consultar bicicletas ancladas */
 
-        //_System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
+        System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
 
         //_estacion.consultarAnclajes();
 
@@ -62,5 +62,5 @@ public class BiciPalma {
         //_estacion.consultarAnclajes();
 
         //_System.out.println("anclajesLibres: " + estacion.anclajesLibres());
-    //_}
+    }
 }

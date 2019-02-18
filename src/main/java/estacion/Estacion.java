@@ -1,16 +1,16 @@
 package estacion;
 
-import java.lang.reflect.Array;
-
 import bicicleta.Bicicleta;
+
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Estacion {
     //Atributos
-    public int id = 0;
-    public String direccion = "";
-    public int numeroAnclajes = 0;
+    private int id = 0;
+    private String direccion = "";
+    private int numeroAnclajes = 0;
 
-    public Bicicleta[] anclajes = null;
+    private Bicicleta[] anclajes = null;
 
     //Constructor
     public Estacion(int id, String direccion, int numeroAnclajes) {
@@ -42,7 +42,7 @@ public class Estacion {
 
     public int anclajesLibres() {
         int libres = 0;
-        for (Bicicleta anclaje: anclajes) {
+        for (Bicicleta anclaje : anclajes) {
             if (anclaje == null) {
                 libres = libres + 1;
             }
@@ -51,4 +51,10 @@ public class Estacion {
             }
         }return libres;
     }
+
+    public int generarAnclaje() {
+        return ThreadLocalRandom.current().nextInt(numeroAnclajes);
+    } //método que funciona pero comentamos en el main
+
+
 }
