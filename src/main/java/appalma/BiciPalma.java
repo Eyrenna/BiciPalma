@@ -20,15 +20,15 @@ public class BiciPalma {
 
         /* caso TEST visualizar anclajes libres */
 
-        //_System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
+        System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
 
-        //_System.out.println("anclajesLibres: " + estacion.anclajesLibres());
+        System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 
         /* caso TEST anclar bicicleta(s) */
 
-        //_System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
+        System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
 
-        //_int[] bicicletas = {291, 292, 293, 294};
+        int[] bicicletas = {291, 292, 293, 294};
 
 		/* // generar anclaje random
 		for (int i: bicicletas){
