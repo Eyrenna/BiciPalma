@@ -27,7 +27,7 @@ public class Estacion {
     }
 
     //Métodos
-    public String consultarEstacion() {
-        return "La estación " + getId() + " con dirección en " + getDireccion() + " tiene " + getNumeroAnclajes() + " anclajes.";
+    public void consultarEstacion() {
+        System.out.println("\nId: " + getId() + "\nDirección: " + getDireccion() + "\nAnclajes: " + getNumeroAnclajes());
     }
 }

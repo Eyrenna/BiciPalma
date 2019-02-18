@@ -14,8 +14,5 @@ public class EstacionTest {
         estacion = new Estacion(5, "Caro", 7);
     }
 
-    @Test
-    public void consultarEstacionTest() {
-        assertEquals("La estación 5 con dirección en Caro tiene 7 anclajes.", estacion.consultarEstacion());
-    }
+
 }
